@@ -1,0 +1,62 @@
+Dockerfile : 
+A text file with instructions to build image
+Automation of Docker Image Creation
+
+FROM
+RUN
+CMD
+
+Step 1 : Create a file named Dockerfile
+
+Step 2 : Add instructions in Dockerfile
+
+Step 3 : Build dockerfile to create image
+
+Step 4 : Run image to create container
+
+COMMANDS
+: docker build 
+: docker build -t ImageName:Tag directoryOfDocekrfile
+
+: docker run image
+
+
+DEMO____
+
+
+mkdir DockerFile
+cd DockerFile 
+touch Dockerfile
+vi Dockerfile
+"
+#getting base image ubuntu
+FROM ubuntu
+MAINTAINER pankaj <pankajjaiswal1456@gmail.com>
+
+RUN apt-get update
+
+CMD ["echo", "hello world ...! from my first docker image"]
+
+"
+
+docker build -t myimage1:1.0 .
+docker run myimage1
+
+
+
+
+
+
+
+References:
+https://github.com/wsargent/docker-ch...
+https://docs.docker.com/engine/refere...
+
+https://www.google.co.in/search?q=doc...
+_________________________________________
+
+
+
+
+
+

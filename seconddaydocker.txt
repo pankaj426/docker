@@ -1,0 +1,92 @@
+docker pull hello-world
+docker run hello-world
+
+docker ps -a
+docker run --name myubuntu -it ubuntu
+docker start myubuntu
+docker stop myubuntu
+
+docker pause myubuntu
+docker unpause myubuntu
+docker run ubuntu:18.04
+
+docker start ubuntu/ID
+
+
+docker top myubuntu
+docker stats myubuntu
+docker attach myubuntu
+docker kill myubuntu
+
+
+docker start myubuntu
+docker attach myubuntu
+docker kill myubuntu
+
+
+docker rm myubuntu/ID
+docker rm hello-world/ID
+
+docker history ubuntu
+
+
+COMMANDS
+: docker ps
+: docker run ImageName
+: docker start ContainerName/ID
+: docker stop ContainerName/ID
+
+: docker pause ContainerName/ID
+: docker unpause  ContainerName/ID
+
+: docker top ContainerName/ID
+: docker stats ContainerName/ID
+
+: docker attach ContainerName/ID
+
+: docker kill ContainerName/ID
+: docker rm ContainerName/ID
+
+: docker history ImageName/ID
+
+
+
+
+  video 11 (jenking valume ondocker
+
+
+
+docker pull jenkins
+
+ docker run --name j1 -p 8080:8080 -p 50000:50000 -v /home/ec2-user/jenkins:/var/jenkins_home jenkins
+
+docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
+docker run -p 8080:8080 -p 50000:50000 jenkins
+
+docker ps
+docker stop myjenkins
+docker start myjenkins 
+docker rm -f jenkings
+
+
+ docker run --name j2 -p 9090:8080 -p 50000:50000 -v /home/ec2-user/jenkins:/var/jenkins_home jenkins
+
+
+docker volume create myjenkins
+docker volume ls
+docker volume inspect myjenkins
+
+docker run --name j6 -p 7077:8080 -p 50002:50002 -v myjenkins:/var/jenkins_home jenkins
+
+
+
+
+
+
+
+
+
+
+
+
+

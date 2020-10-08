@@ -1,0 +1,41 @@
+
+
+docker volume create myvol1
+docker volume ls
+docker volume inspect myvol1
+
+docker volume rm myvol1
+
+docker volume prune
+
+docker pull jenkins
+
+docker run -p 8080:8080 -p 50000:50000 jenkins
+
+docker run --name myjenkins1 -v myvol1:/var/jenkins_home  -p 8080:8080 -p 50000:50000 jenkins
+
+docker run --name myjenkin9 -v myvol1:/var/jenkins_home  -p 8088:8088 -p 60000:60000 jenkins
+
+
+
+docker run --name myjenki -v /home/ec2-user/pk1:/var/jenkins_home -p 9090:9090 -p 70000:70000 jenkins
+
+
+docker stop myjenkins1
+
+
+
+
+
+s
+
+
+
+
+
+
+
+
+
+
+
